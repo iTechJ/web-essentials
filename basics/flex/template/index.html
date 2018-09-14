@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>HTML Flex Layout Example</title>
+</head>
+<body>
+<header>
+    <div class="nav-container">
+
+        <h1 class="logo">
+            <img src="http://www.itechart.com/static/img/logo.png">
+            <span class="menu-button"></span>
+        </h1>
+
+        <ul class="navigation-bar">
+            <li>
+                <a href="">Nav Link</a>
+            </li>
+            <li>
+                <a href="">Nav Link</a>
+            </li>
+            <li>
+                <a href="">Nav Link</a>
+            </li>
+            <li>
+                <a href="">Nav Link</a>
+            </li>
+            <li>
+                <a href="">Nav Link</a>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="navigation-bar">
+        <li>
+            <a href="">Nav Link</a>
+        </li>
+        <li>
+            <a href="">Nav Link</a>
+        </li>
+        <li>
+            <a href="">Nav Link</a>
+        </li>
+        <li>
+            <a href="">Nav Link</a>
+        </li>
+        <li>
+            <a href="">Nav Link</a>
+        </li>
+    </ul>
+</header>
+
+<div class="container">
+
+    <div class="promo-container">
+        <div class="promo-item">
+            <img src="http://placehold.it/550x350" class="img-fluid">
+        </div>
+        <div class="promo-item">
+            <img src="http://placehold.it/550x350" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="page-items">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+</div>
+<footer>
+
+</footer>
+<script>
+    document.querySelector(".menu-button").addEventListener("click", function () {
+        var header = document.querySelector("header");
+
+        if(header.classList.contains("unfolded")) {
+            header.classList.remove("unfolded");
+        } else {
+            header.classList.add("unfolded");
+        }
+    });
+
+    function hasClass(elem, className) {
+        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+</script>
+</body>
+</html>

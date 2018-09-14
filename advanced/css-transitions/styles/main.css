@@ -1,0 +1,58 @@
+.gradient {
+    background: #1e5799; /* Old browsers */
+    background: linear-gradient(45deg, #1e5799 7%, #2c2fea 42%, #207cca 69%, #7db9e8 95%);
+    width: 370px;
+    height: 205px;
+}
+
+.transition {
+    width: 100px;
+    height: 100px;
+    background: red;
+
+    transition-property: border-radius, background-color;
+    transition-duration: 1s, 3s;
+    transition-timing-function: linear, ease-in-out;
+    transition-delay: 1s;
+}
+
+.transition:hover {
+    border-radius: 50px;
+    background-color: blue;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: animation 5s infinite;
+}
+
+@keyframes animation {
+    0% {
+        background: red;
+        left: 0;
+        top: 0;
+    }
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0;
+    }
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: green;
+        left: 0;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0;
+        top: 0;
+    }
+}

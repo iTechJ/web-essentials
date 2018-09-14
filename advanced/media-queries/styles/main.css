@@ -1,0 +1,188 @@
+.display {
+    margin: 10vh auto;
+    border-color: #000;
+    background-color: #7AC3FF;
+    display: flex;
+
+    transition-property: border-radius, width, height;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+.text {
+    align-self: center;
+    margin: auto;
+}
+
+.step,
+.stand {
+    display: none;
+    transition-property: border-radius, width, height;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+.text:before {
+    color: white;
+    font-family: Arial, serif;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .display {
+        width: 1100px;
+        height: 400px;
+        border: 40px solid;
+        border-radius: 20px;
+        margin-bottom: 0;
+    }
+
+    .text:before {
+        content: 'XL';
+    }
+
+    .step {
+        width: 200px;
+        height: 50px;
+        background-color: black;
+        margin: 0 auto;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: block;
+    }
+
+    .stand {
+        border: 20px solid;
+        width: 500px;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        margin: 1rem auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .display {
+        width: 800px;
+        height: 350px;
+        border: 35px solid;
+        border-radius: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .stand {
+        display: block;
+        width: 900px;
+        margin: 0 auto;
+        border-radius: 20px 20px 40px 40px;
+        border: 20px solid;
+        background-color: black;
+    }
+
+    .decorative {
+        border: 10px solid white;
+        border-radius: 10px;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .text:before {
+        content: 'LG';
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .display {
+        width: 500px;
+        height: 600px;
+        border: 30px solid;
+        border-bottom: none;
+        margin-bottom: 0;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .stand {
+        width: 500px;
+        background-color: black;
+        border: 30px solid;
+        margin: 0 auto;
+        display: block;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .decorative {
+        border: 15px solid white;
+        border-radius: 15px;
+        width: 0;
+        margin: 0 auto;
+    }
+
+
+    .text:before {
+        content: 'MD';
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .display {
+        width: 300px;
+        height: 500px;
+        border: 25px solid;
+        border-bottom: none;
+        margin-bottom: 0;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .stand {
+        width: 300px;
+        background-color: black;
+        border: 25px solid;
+        margin: 0 auto;
+        display: block;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .decorative {
+        border: 15px solid white;
+        border-radius: 15px;
+        width: 0;
+        margin: 0 auto;
+    }
+
+    .text:before {
+        content: 'SM';
+    }
+}
+
+@media screen and (max-width: 575px){
+    .display {
+        width: 200px;
+        height: 350px;
+        border: 25px solid;
+        border-bottom: none;
+        margin-bottom: 0;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .stand {
+        width: 200px;
+        background-color: black;
+        border: 25px solid;
+        margin: 0 auto;
+        display: block;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .decorative {
+        border: 8px solid white;
+        border-radius: 6px;
+        width: 30px;
+        margin: 0 auto;
+    }
+
+    .text:before {
+        content: 'XS';
+    }
+}

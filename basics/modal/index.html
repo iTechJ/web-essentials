@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/modal.css">
+    <script src="src/scripts/modal.js"></script>
+    <script src="src/scripts/app.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="header">
+            <div class="title">Modal Header Info</div>
+            <span class="close" data-role="close">X</span>
+        </div>
+        <div class="body">
+            <form>
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text">
+                </div>
+
+            </form>
+        </div>
+        <div class="footer">
+            <button type="button" data-role="close">Close</button>
+            <button type="button">Submit</button>
+        </div>
+    </div>
+
+
+    <button type="button" class="button">Show</button>
+</body>
+</html>

@@ -1,0 +1,120 @@
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    color: #717171;
+}
+
+.flex {
+    display: flex;
+    border: 1px solid #3c3c3c;
+    margin-bottom: 3rem;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.justify.flex-start {
+    justify-content: flex-start;
+}
+
+.flex.justify.space-between {
+    justify-content: space-between;
+}
+
+.flex.justify.space-around {
+    justify-content: space-around;
+}
+
+.flex.justify.flex-end {
+    justify-content: flex-end;
+}
+
+.flex.justify.center {
+    justify-content: center;
+}
+
+.flex.items {
+    height: 30vh;
+    margin-bottom: 1rem;
+}
+
+.flex.items.centered {
+    align-items: center;
+}
+
+.flex.items.start {
+    align-items: flex-start;
+}
+
+.flex.items.end {
+    align-items: flex-end;
+}
+
+.item {
+    border: 1px solid #717171;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.basis-100 {
+    flex-basis: 100px;
+}
+
+.basis-200 {
+    flex-basis: 200px;
+}
+
+.basis-300 {
+    flex-basis: 300px;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+}
+
+.shrink-1 {
+    flex-shrink: 1;
+}
+
+.shrink-2 {
+    flex-shrink: 2;
+}
+
+.flex-1-1-100 {
+    flex: 1 1 100px;
+}

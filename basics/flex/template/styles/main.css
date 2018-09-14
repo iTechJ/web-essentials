@@ -1,0 +1,166 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 60px 0;
+}
+
+/* Header Style */
+header {
+    border-bottom: 1px solid #717171;
+    color: #717171;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.logo {
+    margin: 0.5rem 1.5rem;
+    align-self: center;
+}
+
+.menu-button {
+    display: none;
+}
+
+.navigation-bar {
+    display: flex;
+}
+
+/* Page Content Style*/
+.container {
+    padding: 60px 15px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promo-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-container .promo-item {
+    display: inline-block;
+    margin: 1rem;
+    max-width: 100%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.page-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #737373;
+    margin: 1rem;
+}
+
+/* Footer style */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #717171;
+}
+
+/* General */
+ul {
+    list-style: none;
+    margin: 0.1rem;
+}
+
+ul > li {
+    vertical-align: middle;
+    text-align: center;
+    line-height: 2.2rem;
+    padding: 0.5rem 1rem;
+}
+
+ul > li:hover {
+    background-color: #eaf0f5;
+    cursor: pointer;
+}
+
+ul > li a {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+ul > li:hover a {
+    text-decoration: underline;
+}
+
+/* mobile screen */
+@media (max-width: 768px) {
+    .nav-container {
+        align-self: stretch;
+    }
+    .navigation-bar {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        display: none;
+    }
+
+    .unfolded .navigation-bar {
+        display: block;
+    }
+
+    .navigation-bar > li {
+        border-top: 1px solid lightgrey;
+    }
+
+    .logo {
+        display: flex;
+        align-self: stretch;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        align-self: center;
+    }
+
+    .menu-button {
+        border: 1px solid #3c3c3c;
+        border-radius: 0.3rem;
+        padding:  1rem;
+        display: block;
+        cursor: pointer;
+    }
+
+    .promo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* tab screen */
+@media (max-width: 922px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .navigation-bar {
+        padding-left: 0;
+    }
+}
